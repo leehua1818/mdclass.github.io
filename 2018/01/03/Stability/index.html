@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>Stability | Note of CTRoad</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Stability analysis1. Main references E. Fridman, A. Seuret, et al., Robust sampled-data stabilization of linear systems: an input delay approach. Automatica 40 (2004) 1441-1446. [PDF] X.-M. Sun, J. Zh">
+<meta name="keywords" content="control,stability">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Stability">
+<meta property="og:url" content="http://yoursite.com/2018/01/03/Stability/index.html">
+<meta property="og:site_name" content="Note of CTRoad">
+<meta property="og:description" content="Stability analysis1. Main references E. Fridman, A. Seuret, et al., Robust sampled-data stabilization of linear systems: an input delay approach. Automatica 40 (2004) 1441-1446. [PDF] X.-M. Sun, J. Zh">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-11-26T14:59:15.056Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Stability">
+<meta name="twitter:description" content="Stability analysis1. Main references E. Fridman, A. Seuret, et al., Robust sampled-data stabilization of linear systems: an input delay approach. Automatica 40 (2004) 1441-1446. [PDF] X.-M. Sun, J. Zh">
+  
+    <link rel="alternate" href="/atom.xml" title="Note of CTRoad" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Note of CTRoad</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">点滴记录学习笔记</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-Stability" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/01/03/Stability/" class="article-date">
+  <time datetime="2018-01-03T15:10:27.000Z" itemprop="datePublished">2018-01-03</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Stability
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Stability-analysis"><a href="#Stability-analysis" class="headerlink" title="Stability analysis"></a>Stability analysis</h1><h2 id="1-Main-references"><a href="#1-Main-references" class="headerlink" title="1. Main references"></a>1. Main references</h2><ol>
+<li>E. Fridman, A. Seuret, et al., <em>Robust sampled-data stabilization of linear systems: an input delay approach</em>. <strong>Automatica</strong> 40 (2004) 1441-1446. <a href="https://hal.inria.fr/inria-00131031/document" target="_blank" rel="noopener">[PDF]</a></li>
+<li>X.-M. Sun, J. Zhao, et al., <em>Stability and L2-gain analysis for switched delay systems: A delay-dependent method</em>. <strong>Automatica</strong> 42 (2006) 1769-1774. <a href="http://sci-hub.la/10.1016/j.automatica.2006.05.007" target="_blank" rel="noopener">[PDF: SCI-Hub]</a></li>
+<li>R. Wang, Z.-G. Wu, et al., <em>Dynamic output feedback control for a class of switched delay systems under asynchronous switching</em>. <strong>Information Sciences</strong> 225 (2013) 72-80. <a href="http://azadproject.ir/wp-content/uploads/2014/04/2013-Dynamic-output-feedback-control-for-a-class-of-switched-delay-systems-under-asynchronous-switching-.pdf" target="_blank" rel="noopener">[PDF]</a><a id="more"></a></li>
+<li>Y.-E. Wang, X.-M. Sun, et al., <em>Construction of Lyapunov¨CKrasovskii functionals for switched nonlinear systems with input delay</em>. <strong>Automatica</strong> 50 (2014) 1249-1253. <a href="http://or.nsfc.gov.cn/bitstream/00001903-5/340759/1/1000013344209.pdf" target="_blank" rel="noopener">[PDF]</a></li>
+<li>P. Park, W.I. Lee, et al., <em>Auxiliary function-based integral inequalities for quadratic functions and their applications to time-delay systems</em>. <strong>Journal of the Franklin Institute</strong> 352 (2015) 1378-1396. <a href="http://sci-hub.la/10.1016/j.jfranklin.2015.01.004" target="_blank" rel="noopener">[PDF: SCI-Hub]</a></li>
+<li>A. Seuret, and F. Gouaisbaut, <em>Hierarchy of LMI conditions for the stability analysis of time-delay systems</em>. <strong>Systems &amp; Control Letters</strong> 81 (2015) 1-7. <a href="https://hal.archives-ouvertes.fr/docs/01/06/51/42/PDF/InterpolationV70.pdf" target="_blank" rel="noopener">[PDF]</a></li>
+<li>X. Zhao, S. Yin, et al., <em>Switching Stabilization for a Class of Slowly Switched Systems</em>. <strong>IEEE Transactions on Automatic Control</strong> 60 (2015) 221-226. <a href="http://sci-hub.la/10.1109/TAC.2014.2322961" target="_blank" rel="noopener">[PDF: SCI-Hub]</a></li>
+<li>K. Liu, A. Seuret, et al., <em>Stability analysis of systems with time-varying delays via the second-order Bessel-Legendre inequality</em>. <strong>Automatica</strong> 76 (2017) 138-142. <a href="https://hal.archives-ouvertes.fr/hal-01382473/file/Improved_wirtinger07142016.pdf" target="_blank" rel="noopener">[PDF]</a></li>
+<li>X.-M. Zhang, Q.-L. Han, et al., <em>An improved reciprocally convex inequality and an augmented Lyapunov-Krasovskii functional for stability of linear systems with time-varying delay</em>. <strong>Automatica</strong> (2017). <a href="http://sci-hub.la/10.1016/j.automatica.2017.04.048" target="_blank" rel="noopener">[PDF: SCI-Hub]</a></li>
+</ol>
+<h2 id="2-Other-references"><a href="#2-Other-references" class="headerlink" title="2. Other references"></a>2. Other references</h2><ol>
+<li>L. Wu, W.X. Zheng, H. Gao, Dissipativity-Based Sliding Mode Control of Switched Stochastic Systems, <em>IEEE Transactions on Automatic Control</em>, 2013, 58: 785-791.</li>
+<li>A. Aleksandrov, E. Aleksandrova, A. Zhabko, Stability analysis of some classes of nonlinear switched systems with time delay, <em>Int J Syst Sci</em>, 2017, 48: 2111-2119.</li>
+<li>I. Bras, A.C. Carapito, P. Rocha, Stability of simultaneously block triangularisable switched systems with partial state reset, <em>Int J Control</em>, 2017, 90: 428-437.</li>
+<li>C. Briat, Dwell-time stability and stabilization conditions for linear positive impulsive and switched systems, <em>Nonlinear Anal-Hybri</em>, 2017, 24: 198-226.</li>
+<li>G.P. Chen, Y. Yang, Stability of a class of nonlinear fractional order impulsive switched systems, <em>T I Meas Control</em>, 2017, 39: 781-790.</li>
+<li>H.B. Chen, P. Shi, C.C. Lim, Stability of neutral stochastic switched time delay systems: An average dwell time approach, <em>Int J Robust Nonlin</em>, 2017, 27: 512-532.</li>
+<li>X.Y. Ding, X. Liu, Stability analysis for switched positive linear systems under state-dependent switching, Int J Control Autom, 2017, 15: 481-488.</li>
+<li>G. Eisenbarth, J.M. Davis, I. Gravagne, Singular value conditions for stability of dynamic switched systems, J Math Anal Appl, 2017, 452: 814-829.</li>
+<li>R.W. Guo, Y.Z. Wang, Region stability analysis for switched nonlinear systems with multiple equilibria, Int J Control Autom, 2017, 15: 567-574.</li>
+<li>M. Kermani, A. Sakly, On the Stability Analysis of Switched Nonlinear Systems with Time Varying Delay Under Arbitrary Switching, J Syst Sci Complex, 2017, 30: 329-346.</li>
+<li>A. Kundu, D. Chatterjee, On stability of discrete-time switched systems, Nonlinear Anal-Hybri, 2017, 23: 191-210.</li>
+<li>Y. Li, S. Sui, S. Tong, Adaptive Fuzzy Control Design for Stochastic Nonlinear Switched Systems With Arbitrary Switchings and Unmodeled Dynamics, IEEE Trans Cybern, 2017, 47: 403-414.</li>
+<li>Y. Li, H.B. Zhang, Q.X. Zheng, Robust stability and L-1-gain analysis of interval positive switched T-S fuzzy systems with mode-dependent dwell time, Neurocomputing, 2017, 235: 90-97.</li>
+<li>L. Liu, Q. Zhou, H.J. Liang, L.J. Wang, Stability and Stabilization of Nonlinear Switched Systems Under Average Dwell Time, Appl Math Comput, 2017, 298: 77-94.</li>
+<li>T.T. Liu, B.W. Wu, L.L. Liu, Y.E. Wang, Finite-Time Stability of Discrete Switched Singular Positive Systems, Circ Syst Signal Pr, 2017, 36: 2243-2255.</li>
+<li>X.W. Liu, Y.B. Yu, H. Chen, Stability of perturbed switched nonlinear systems with delays, Nonlinear Anal-Hybri, 2017, 25: 114-125.</li>
+<li>Z.Y. Meng, W.G. Xia, K.H. Johansson, S. Hirche, Stability of Positive Switched Linear Systems: Weak Excitation and Robustness to Time-Varying Delay, Ieee Transactions on Automatic Control, 2017, 62: 399-405.</li>
+<li>M.J. Park, O.M. Kwon, S.G. Choi, Stability analysis of discrete-time switched systems with time-varying delays via a new summation inequality, Nonlinear Anal-Hybri, 2017, 23: 76-90.</li>
+<li>M. Philippe, G. Millerioux, R.M. Jungers, Deciding the boundedness and dead-beat stability of constrained switching systems, Nonlinear Anal-Hybri, 2017, 23: 287-299.</li>
+<li>X.C. Pu, X.G. Tan, Stability of hybrid stochastic differential systems with switching and time delay, Stoch Anal Appl, 2017, 35: 569-585.</li>
+<li>J. Shen, W.Q. Wang, Finite-time stability and boundedness for positive switched systems with time-varying delay under state-dependent switching, T I Meas Control, 2017, 39: 43-51.</li>
+<li>W. Tao, Y. Liu, J.Q. Lu, Stability and L-2-gain analysis for switched singular linear systems with jumps, Math Method Appl Sci, 2017, 40: 589-599.</li>
+<li>N.T. Thanh, P. Niamsup, V.N. Phat, Finite-time stability of singular nonlinear switched time-delay systems: A singular value decomposition approach, J Franklin I, 2017, 354: 3502-3518.</li>
+<li>Y.Z. Tian, Y.L. Cai, Y.G. Sun, Stability of switched nonlinear time-delay systems with stable and unstable subsystems, Nonlinear Anal-Hybri, 2017, 24: 58-68.</li>
+<li>B. Wang, Y.P. Tian, Stability analysis for a class of switched systems under perturbations with applications to consensus, Iet Control Theory A, 2017, 11: 1341-1350.</li>
+<li>Y. Wang, N. Roohi, G.E. Dullerud, M. Viswanathan, Stability Analysis of Switched Linear Systems Defined by Regular Languages, Ieee Transactions on Automatic Control, 2017, 62: 2568-2575.</li>
+<li>X. Xie, H.L. Xu, X.M. Cheng, Y.L. Yu, Improved Results on Exponential Stability of Discrete-Time Switched Delay Systems, Discrete Cont Dyn-B, 2017, 22: 199-208.</li>
+<li>H. Yang, W.J. Ren, B. Jiang, On stability of switched nonlinear systems with time-scaling transformation, Int J Syst Sci, 2017, 48: 2120-2127.</li>
+<li>Y.F. Yin, X.D. Zhao, X.L. Zheng, New Stability and Stabilization Conditions of Switched Systems with Mode-Dependent Average Dwell Time, Circ Syst Signal Pr, 2017, 36: 82-98.</li>
+<li>Y.F. Yin, G.D. Zong, X.D. Zhao, Improved stability criteria for switched positive linear systems with average dwell time switching, J Franklin I, 2017, 354: 3472-3484.</li>
+<li>D. Zhai, A.Y. Lu, J.X. Dong, Q.L. Zhang, Stability analysis and state feedback control of continuous-time T-S fuzzy systems via a new switched fuzzy Lyapunov function approach, Appl Math Comput, 2017, 293: 586-599.</li>
+<li>J.F. Zhang, X.D. Zhao, R.D. Zhang, S.S. Zhou, Dual approach to stability and stabilisation of uncertain switched positive systems, Int J Syst Sci, 2017, 48: 873-884.</li>
+<li>X.Q. Zhang, J. Zhao, X.Y. Li, Stability Analysis and Design of Uncertain Discrete-time Switched Systems with Actuator Saturation Using Antiwindup and Multiple Lyapunov Functions Approach, Asian J Control, 2017, 19: 325-331.</li>
+<li>Q.X. Zheng, H.B. Zhang, Exponential Stability and Asynchronous Stabilization of Nonlinear Impulsive Switched Systems via Switching Fuzzy Lyapunov Function Approach, Int J Fuzzy Syst, 2017, 19: 257-271.</li>
+<li>Q.X. Zheng, H.B. Zhang, D.H. Zheng, Stability and Asynchronous Stabilization for a Class of Discrete-time Switched Nonlinear Systems with Stable and Unstable Subsystems, Int J Control Autom, 2017, 15: 986-994.</li>
+<li>Q.X. Zhu, F. Jiang, H. Wang, B. Wang, Comment on “Stability analysis of stochastic differential equations with Markovian switching” [Systems &amp; Control Letters 61 (2012) 1209-1214], Systems &amp; Control Letters, 2017, 102: 102-103.</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/01/03/Stability/" data-id="cjoyfumwp0057arb764u20vj9" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/control/">control</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/stability/">stability</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2018/01/07/MariFlow/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Self-Driving Mario Kart w/Recurrent Neual Network
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2018/01/03/Transmission-on-CentOS-6/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Transmission on CentOS 6</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/RNN/">RNN</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SMC/">SMC</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/aria2/">aria2</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/baidu/">baidu</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/bbr/">bbr</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/bbs/">bbs</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/bench/">bench</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/bypy/">bypy</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/caddy/">caddy</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/centos/">centos</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/child/">child</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/control/">control</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/douyu/">douyu</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ffmpeg/">ffmpeg</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/firewall/">firewall</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/font/">font</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/go/">go</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/golang/">golang</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/google/">google</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/kcptun/">kcptun</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/latex/">latex</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/makrdown/">makrdown</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/math/">math</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nginx/">nginx</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nodejs/">nodejs</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/office/">office</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/offshore-platfrom/">offshore platfrom</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/openzv/">openzv</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/pip/">pip</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ppt/">ppt</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/pt/">pt</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python/">python</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/qBittorrent/">qBittorrent</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/qiniu/">qiniu</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/qshell/">qshell</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/rclone/">rclone</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/rtorrent/">rtorrent</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/search/">search</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/security/">security</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/seedbox/">seedbox</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/shell/">shell</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ssr/">ssr</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/stability/">stability</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sync/">sync</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/systemctl/">systemctl</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/test/">test</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tmux/">tmux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/transmission/">transmission</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/video/">video</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vnc/">vnc</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vps/">vps</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/wiki/">wiki</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/x-window/">x window</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/youtube/">youtube</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/zsh/">zsh</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/RNN/" style="font-size: 10px;">RNN</a> <a href="/tags/SMC/" style="font-size: 10px;">SMC</a> <a href="/tags/aria2/" style="font-size: 10px;">aria2</a> <a href="/tags/baidu/" style="font-size: 10px;">baidu</a> <a href="/tags/bbr/" style="font-size: 10px;">bbr</a> <a href="/tags/bbs/" style="font-size: 10px;">bbs</a> <a href="/tags/bench/" style="font-size: 10px;">bench</a> <a href="/tags/bypy/" style="font-size: 10px;">bypy</a> <a href="/tags/caddy/" style="font-size: 10px;">caddy</a> <a href="/tags/centos/" style="font-size: 20px;">centos</a> <a href="/tags/child/" style="font-size: 10px;">child</a> <a href="/tags/control/" style="font-size: 12.5px;">control</a> <a href="/tags/douyu/" style="font-size: 10px;">douyu</a> <a href="/tags/ffmpeg/" style="font-size: 10px;">ffmpeg</a> <a href="/tags/firewall/" style="font-size: 10px;">firewall</a> <a href="/tags/font/" style="font-size: 10px;">font</a> <a href="/tags/go/" style="font-size: 10px;">go</a> <a href="/tags/golang/" style="font-size: 10px;">golang</a> <a href="/tags/google/" style="font-size: 17.5px;">google</a> <a href="/tags/hexo/" style="font-size: 12.5px;">hexo</a> <a href="/tags/kcptun/" style="font-size: 10px;">kcptun</a> <a href="/tags/latex/" style="font-size: 10px;">latex</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/makrdown/" style="font-size: 10px;">makrdown</a> <a href="/tags/math/" style="font-size: 10px;">math</a> <a href="/tags/nginx/" style="font-size: 10px;">nginx</a> <a href="/tags/nodejs/" style="font-size: 10px;">nodejs</a> <a href="/tags/office/" style="font-size: 10px;">office</a> <a href="/tags/offshore-platfrom/" style="font-size: 10px;">offshore platfrom</a> <a href="/tags/openzv/" style="font-size: 10px;">openzv</a> <a href="/tags/pip/" style="font-size: 10px;">pip</a> <a href="/tags/ppt/" style="font-size: 10px;">ppt</a> <a href="/tags/pt/" style="font-size: 10px;">pt</a> <a href="/tags/python/" style="font-size: 12.5px;">python</a> <a href="/tags/qBittorrent/" style="font-size: 10px;">qBittorrent</a> <a href="/tags/qiniu/" style="font-size: 10px;">qiniu</a> <a href="/tags/qshell/" style="font-size: 10px;">qshell</a> <a href="/tags/rclone/" style="font-size: 10px;">rclone</a> <a href="/tags/rtorrent/" style="font-size: 10px;">rtorrent</a> <a href="/tags/search/" style="font-size: 10px;">search</a> <a href="/tags/security/" style="font-size: 10px;">security</a> <a href="/tags/seedbox/" style="font-size: 10px;">seedbox</a> <a href="/tags/shell/" style="font-size: 10px;">shell</a> <a href="/tags/ssr/" style="font-size: 12.5px;">ssr</a> <a href="/tags/stability/" style="font-size: 10px;">stability</a> <a href="/tags/sync/" style="font-size: 12.5px;">sync</a> <a href="/tags/systemctl/" style="font-size: 10px;">systemctl</a> <a href="/tags/test/" style="font-size: 10px;">test</a> <a href="/tags/tmux/" style="font-size: 10px;">tmux</a> <a href="/tags/transmission/" style="font-size: 10px;">transmission</a> <a href="/tags/video/" style="font-size: 10px;">video</a> <a href="/tags/vnc/" style="font-size: 12.5px;">vnc</a> <a href="/tags/vps/" style="font-size: 12.5px;">vps</a> <a href="/tags/wiki/" style="font-size: 10px;">wiki</a> <a href="/tags/x-window/" style="font-size: 10px;">x window</a> <a href="/tags/youtube/" style="font-size: 15px;">youtube</a> <a href="/tags/zsh/" style="font-size: 12.5px;">zsh</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">十一月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">九月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">五月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">四月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">三月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">二月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">一月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">十二月 2017</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/11/25/python-plot/">Python绘图</a>
+          </li>
+        
+          <li>
+            <a href="/2018/09/19/Python-web/">Learning Python web</a>
+          </li>
+        
+          <li>
+            <a href="/2018/05/02/office/">办公效率网站</a>
+          </li>
+        
+          <li>
+            <a href="/2018/04/06/tmux/">Tmux 快捷键 速查表</a>
+          </li>
+        
+          <li>
+            <a href="/2018/04/06/DouyuVideo/">DouyuVideo</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 Floybired<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
